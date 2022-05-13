@@ -1,3 +1,12 @@
+resource "null_resource" "artifact" {
+  triggers = {
+    always_run = timestamp()
+  }
+  provisioner "local-exec" {
+    working_dir = "${path.module}/code/"
+    command     = "make lambda"
+  }
+}
 data "archive_file" "artifact" {
   type        = "zip"
   source_file = "${path.module}/code/lambda"
