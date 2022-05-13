@@ -13,3 +13,6 @@ output "password" {
   value = local.password
   sensitive = true
 }
+output "lambda_url" {
+  value = aws_lambda_function_url.endpoint.function_url
+}

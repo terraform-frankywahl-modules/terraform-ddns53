@@ -143,4 +143,7 @@ resource "random_password" "password" {
   length = 16
 }
 
-
+resource "aws_lambda_function_url" "endpoint" {
+  function_name      = aws_lambda_function.main.function_name
+  authorization_type = "NONE"
+}
