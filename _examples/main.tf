@@ -1,3 +1,6 @@
+/**
+ * Example folder for using the module
+ */
 module "ddns" {
   //source            = "git@github.com:terraform-frankywahl-modules/terraform-ddns53.git"
   source            = "../."
