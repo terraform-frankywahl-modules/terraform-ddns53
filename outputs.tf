@@ -3,9 +3,10 @@ output "url" {
 }
 
 output "username" {
-  value = random_string.username.result
+  value = local.username
 }
 
 output "password" {
-  value = random_password.password.result
+  value = local.password
+  sensitive = true
 }

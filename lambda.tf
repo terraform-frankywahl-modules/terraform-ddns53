@@ -52,8 +52,8 @@ resource "aws_lambda_function" "main" {
 
   environment {
     variables = {
-      "USERNAME" = random_string.username.result
-      "PASSWORD" = random_password.password.result
+      "USERNAME" = local.username
+      "PASSWORD" = local.password
       "FQDN"     = resource.aws_route53_record.ddns.name
       "ZONE_ID"  = data.aws_route53_zone.domain.zone_id
     }
@@ -134,10 +134,12 @@ data "aws_iam_policy" "cloudwatch" {
 }
 
 resource "random_string" "username" {
+  count  = var.username == null ? 1 : 0
   length = 16
 }
 
 resource "random_password" "password" {
+  count  = var.password == null ? 1 : 0
   length = 16
 }
 

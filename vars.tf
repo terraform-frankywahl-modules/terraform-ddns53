@@ -21,3 +21,14 @@ variable "tags" {
   default     = {}
 }
 
+variable "username" {
+  description = "Username for the basic authentication. One will be created if none are given"
+  type        = string
+  default     = null
+}
+
+variable "password" {
+  description = "Password for the basic authentication. One will be created if none are given"
+  type        = string
+  default     = null
+}
