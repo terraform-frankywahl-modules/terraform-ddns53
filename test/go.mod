@@ -2,7 +2,7 @@ module github.com/frankwahl-terraform-modules/terrafomr-ddns53
 
 go 1.18
 
-require github.com/gruntwork-io/terratest v0.43.13
+require github.com/gruntwork-io/terratest v0.44.0
 
 require (
 	cloud.google.com/go v0.105.0 // indirect
