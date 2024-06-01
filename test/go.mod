@@ -2,7 +2,7 @@ module github.com/frankwahl-terraform-modules/terrafomr-ddns53
 
 go 1.18
 
-require github.com/gruntwork-io/terratest v0.46.14
+require github.com/gruntwork-io/terratest v0.46.15
 
 require (
 	cloud.google.com/go v0.110.0 // indirect
@@ -42,10 +42,10 @@ require (
 	github.com/ulikunitz/xz v0.5.10 // indirect
 	github.com/zclconf/go-cty v1.10.0 // indirect
 	go.opencensus.io v0.24.0 // indirect
-	golang.org/x/crypto v0.17.0 // indirect
-	golang.org/x/net v0.17.0 // indirect
+	golang.org/x/crypto v0.21.0 // indirect
+	golang.org/x/net v0.23.0 // indirect
 	golang.org/x/oauth2 v0.8.0 // indirect
-	golang.org/x/sys v0.15.0 // indirect
+	golang.org/x/sys v0.18.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
 	golang.org/x/xerrors v0.0.0-20220907171357-04be3eba64a2 // indirect
 	google.golang.org/api v0.114.0 // indirect
