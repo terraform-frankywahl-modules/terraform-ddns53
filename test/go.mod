@@ -1,8 +1,8 @@
 module github.com/frankwahl-terraform-modules/terrafomr-ddns53
 
-go 1.25.0
+go 1.26
 
-require github.com/gruntwork-io/terratest v0.55.0
+require github.com/gruntwork-io/terratest v0.56.0
 
 require (
 	github.com/agext/levenshtein v1.2.3 // indirect
